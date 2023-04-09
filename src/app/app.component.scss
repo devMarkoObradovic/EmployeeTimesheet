@@ -23,7 +23,7 @@ td, th {
 }
 
 .table-container {
-  width: 50%;
+  width: 500px;
   margin: 50px auto;
 
   .mat-header-cell {
@@ -50,16 +50,33 @@ td, th {
 
 }
 
-::ng-deep .mat-sort-header-container {
+::ng-deep .mat-sort-header-container{
   display:flex;
   justify-content:center;
 }
+
 
 // class taht give color to row after condition that row.time < 0 hrs
 .row-color {
     background-color: #F4AD9C;
 }
 
+.pieChart-container{
+  width: 50%;
+  margin: 50px auto;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 600px) {
+  .pieChart-container{
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .table-container{
+    width: 90%;
+    margin-top: 20px;
+  }
+}
 
 
 

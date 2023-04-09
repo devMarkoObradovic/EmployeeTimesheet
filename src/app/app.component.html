@@ -6,7 +6,7 @@
 
 <div class="table-container mat-elevation-z8">
 
-  <table mat-table [dataSource]="dataSource" matSort >
+  <table mat-table [dataSource]="dataSource" matSort>
 
     <!-- Name Column -->
     <ng-container matColumnDef="EmployeeName">
@@ -15,9 +15,9 @@
     </ng-container>
 
     <!-- Total Time in Month Column -->
-    <ng-container matColumnDef="DateDifference" >
+    <ng-container matColumnDef="DateDifference">
       <th mat-header-cell *matHeaderCellDef mat-sort-header> Time </th>
-      <td mat-cell *matCellDef="let row" >{{ row.DateDifference }} hrs </td>
+      <td mat-cell *matCellDef="let row">{{ row.DateDifference }} hrs </td>
     </ng-container>
 
     <!-- Actions Column -->
@@ -33,4 +33,10 @@
 
   </table>
 
+</div>
+
+<div class="pieChart-container">
+  <apx-chart *ngIf="chartOptions" [series]="chartOptions.series" [chart]="chartOptions.chart"
+    [labels]="chartOptions.labels" [colors]="chartOptions.colors" [legend]="chartOptions.legend" [title]="chartOptions.title">
+  </apx-chart>
 </div>

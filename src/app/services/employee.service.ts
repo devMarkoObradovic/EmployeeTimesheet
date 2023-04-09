@@ -40,7 +40,6 @@ export class EmployeeService {
     }
 
     const result = Object.values(groupedData);
-    console.log(result);
     return result;
   }
 
