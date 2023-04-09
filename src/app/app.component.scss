@@ -1,0 +1,71 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.action {
+  display: flex;
+  gap: 5px;
+}
+
+table {
+  width: 100%;
+
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+td, th {
+  width: 25%;
+
+}
+
+.table-container {
+  width: 50%;
+  margin: 50px auto;
+
+  .mat-header-cell {
+    color: black;
+    font-size: 16px;
+    background-color: #E5E5E5;
+
+
+  }
+  .mat-column-EmployeeName{
+    border-right: 2px solid #d0d0d0;
+    border: 1px solid #d0d0d0;
+  }
+
+  .mat-column-DateDifference {
+    border: 1px solid #d0d0d0;
+    text-align: center;
+  }
+
+  .mat-column-actions {
+    text-align: center;
+    border: 1px solid #d0d0d0;
+  }
+
+}
+
+::ng-deep .mat-sort-header-container {
+  display:flex;
+  justify-content:center;
+}
+
+// class taht give color to row after condition that row.time < 0 hrs
+.row-color {
+    background-color: #F4AD9C;
+}
+
+
+
+
+
+
+
+
+
+
